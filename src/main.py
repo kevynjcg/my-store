@@ -8,6 +8,6 @@ version = "v1"
 app = FastAPI()
 app.include_router(api_router, prefix=f"/api/{version}")
 
-@app.get("/", include_in_schema=False)
+@app.get("/")
 def root():
-    return RedirectResponse(url="/docs")
+    return {"message": "🚀 FastAPI is live on Railway! Try /api/v1 or /docs"}
