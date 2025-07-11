@@ -5,7 +5,7 @@ from src.db.session import Base
 
 class Transaction(Base):
     __tablename__ = "transactions"
-    __table_args__ = {"schema": "kevyn_store"}
+  
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"))
