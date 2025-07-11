@@ -3,7 +3,7 @@ from src.db.session import Base
 
 class User(Base):
     __tablename__ = "users"
-    __table_args__ = {"schema": "kevyn_store"}
+
 
 
     id = Column(Integer, primary_key=True, index=True)
