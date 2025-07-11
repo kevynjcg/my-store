@@ -1,0 +1,7 @@
+{
+    "python.languageServer": "Pylance",
+    "C_Cpp.autocompleteAddParentheses": true,
+    "python.autoComplete.extraPaths": [
+        
+    ]
+}
