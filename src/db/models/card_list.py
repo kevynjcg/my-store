@@ -5,7 +5,7 @@ from src.db.session import Base
 
 class GcashCard(Base):
     __tablename__ = "card_list"
-    __table_args__ = {"schema": "kevyn_store"}  # if you use schemas
+
 
     id = Column(Integer, primary_key=True, index=True)  
     card_number = Column(String(16))  
