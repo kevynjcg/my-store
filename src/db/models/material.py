@@ -4,7 +4,7 @@ from src.db.session import Base
 
 class Material(Base):
     __tablename__ = "materials"
-    __table_args__ = {"schema": "kevyn_store"}
+
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(100), nullable=False)
